@@ -16,18 +16,20 @@ To write and execute an Assembly language program for finding the square of a gi
 
 ## PROGRAM
 ```
-
-
-
-
-
-
-
-
-
+ORG 00H
+MOV R0,#50H
+MOV A,@R0
+MOV B,A
+MUL AB
+INC R0
+MOV @R0,A
+END
 ```
 
 ## OUTPUT
+<img width="1919" height="1079" alt="sq" src="https://github.com/user-attachments/assets/f152429f-cbb0-4254-a030-74d33da8e511" />
+
+
 
 
 ## RESULT
@@ -50,18 +52,25 @@ To write and execute an Assembly language program for finding the cube of a give
 
 ## PROGRAM
 ```
-
-
-
-
-
-
-
-
+ORG 00H
+MOV R0,#50H
+MOV A,@R0
+MOV B,A
+MUL AB
+MOV B,@R0
+MUL AB
+INC R0
+MOV @R0,A
+INC R0
+MOV @R0,A
+END
 ```
 
 
 ## OUTPUT
+<img width="1919" height="1079" alt="cube" src="https://github.com/user-attachments/assets/4a16d668-f007-4608-ad11-c33838d11173" />
+
+
 
 ## RESULT
 Thus, the cube of the given data is calculated using 8051 Keil.
